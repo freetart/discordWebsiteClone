@@ -1,0 +1,33 @@
+.nav {
+  @include maxWidth();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    color: color(white);
+
+    i {
+      font-size: size(xl);
+    }
+
+    h3 {
+      @include headingStyles();
+      font-family: "Orbitron", cursive;
+      font-size: size(md);
+    }
+  }
+
+  &-links {
+    a {
+      color: color(white);
+      font-size: size(xs);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

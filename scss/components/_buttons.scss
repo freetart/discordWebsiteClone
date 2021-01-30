@@ -1,0 +1,13 @@
+.btn-light {
+  @include textStyles();
+  font-size: size(xs);
+  background-color: color(white);
+  color: color(black);
+  padding: 0.7rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}
