@@ -1,0 +1,23 @@
+$colors: (
+  primary: #7289da,
+  black: #23272a,
+  white: #fff,
+  gray: #f6f6f6,
+  muted: #393d40,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$font-sizes: (
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.6rem,
+);
+
+@function size($size) {
+  @return map-get($font-sizes, $size);
+}
