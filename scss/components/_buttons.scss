@@ -1,10 +1,39 @@
-.btn-light {
+.btn {
   @include textStyles();
-  font-size: size(xs);
+  font-size: size(sm);
+  padding: 0.9rem;
+  display: inline-block;
+}
+
+.nav-btn {
+  @extend .btn;
+  background-color: color(black);
+  color: color(white);
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.btn-light {
+  @extend .btn;
   background-color: color(white);
   color: color(black);
-  padding: 0.7rem;
-  border-radius: 2rem;
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background-color: color(black);
+  color: color(white);
+  padding: 1.2rem;
   transition: all 0.3s ease;
 
   &:hover {

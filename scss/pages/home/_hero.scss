@@ -1,3 +1,29 @@
-.header {
-  background-color: color(primary);
+.home-header {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("/images/home/nature.gif") top center/cover no-repeat;
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+
+    &-content {
+      @include flexCenter();
+      margin-bottom: 5rem;
+      color: color(black);
+
+      h1 {
+        @include headingStyles();
+        font-size: size(xl) + 2rem;
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(sm);
+      }
+    }
+  }
 }

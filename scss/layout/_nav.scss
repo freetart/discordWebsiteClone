@@ -7,7 +7,7 @@
   &-logo {
     display: flex;
     align-items: center;
-    color: color(white);
+    color: color(black);
 
     i {
       font-size: size(xl);
@@ -22,7 +22,7 @@
 
   &-links {
     a {
-      color: color(white);
+      color: color(black);
       font-size: size(xs);
 
       &:hover {
