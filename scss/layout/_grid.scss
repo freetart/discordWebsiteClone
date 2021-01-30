@@ -8,7 +8,7 @@
 
   h2 {
     @include headingStyles();
-    font-size: size(xl);
+    font-size: size(xl) + 1rem;
   }
 
   p {
@@ -32,6 +32,13 @@
 .hanging-out,
 .staying-close {
   background-color: color(gray);
+}
+
+.staying-close {
+  h3 {
+    @include headingStyles();
+    font-size: size(xl) + 1rem;
+  }
 }
 
 svg,

@@ -1,0 +1,65 @@
+.footer {
+  background-color: color(black);
+
+  &-top {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    h3 {
+      @include headingStyles();
+      color: color(primary);
+      font-size: size(sm);
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.9rem;
+    }
+
+    a:not(.social-link) {
+      @include textStyles();
+      color: color(white);
+      font-size: size(xs) - 0.1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .social-link {
+      transition: all 0.3s ease;
+      font-size: size(xl);
+      color: color(white);
+    }
+
+    .social-link:hover {
+      color: color(primary);
+    }
+  }
+
+  &-bottom {
+    @include maxWidth();
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    border-top: 0.1rem solid color(primary);
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      color: color(white);
+
+      i {
+        font-size: size(xl);
+      }
+
+      h3 {
+        @include headingStyles();
+        font-family: "Orbitron", cursive;
+        font-size: size(md);
+      }
+    }
+  }
+}

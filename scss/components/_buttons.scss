@@ -40,3 +40,21 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
   }
 }
+
+.btn-primary {
+  @extend .btn;
+  background-color: color(primary);
+  color: color(white);
+  transition: all 0.3s ease;
+  padding: 1.2rem;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.btn-footer {
+  @extend .btn-primary;
+  border-radius: 2rem;
+  padding: 0.9rem;
+}
