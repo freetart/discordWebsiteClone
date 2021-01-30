@@ -18,7 +18,19 @@
   }
 }
 
-.hanging-out {
+.one-col-content {
+  @extend .two-col-content;
+  @include flexCenter();
+  grid-template-columns: 1fr;
+
+  p {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.hanging-out,
+.staying-close {
   background-color: color(gray);
 }
 
