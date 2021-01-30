@@ -1,0 +1,28 @@
+.two-col-content {
+  @include maxWidth();
+  @include sectionSpacing();
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl);
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(sm);
+    color: color(muted);
+  }
+}
+
+.hanging-out {
+  background-color: color(gray);
+}
+
+svg,
+path {
+  display: block;
+}
