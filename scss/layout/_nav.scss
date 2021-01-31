@@ -21,6 +21,10 @@
   }
 
   &-links {
+    @include responsive(md) {
+      display: none;
+    }
+
     a {
       color: color(black);
       font-size: size(xs);

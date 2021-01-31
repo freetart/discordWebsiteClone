@@ -10,6 +10,20 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: end;
 
+    @include responsive(xxl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    .img-foreground-left {
+      @include responsive(xxl) {
+        display: none;
+      }
+    }
+
     &-content {
       @include flexCenter();
       margin-bottom: 5rem;

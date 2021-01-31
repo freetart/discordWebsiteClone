@@ -6,6 +6,16 @@
   align-items: center;
   gap: 2rem;
 
+  @include responsive(md) {
+    grid-template-columns: 1fr;
+  }
+
+  &-info {
+    @include responsive(md) {
+      order: -1;
+    }
+  }
+
   h2 {
     @include headingStyles();
     font-size: size(xl) + 1rem;
@@ -26,6 +36,10 @@
   p {
     width: 70%;
     margin: auto;
+
+    @include responsive(md) {
+      width: 100%;
+    }
   }
 }
 
@@ -44,4 +58,6 @@
 svg,
 path {
   display: block;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
