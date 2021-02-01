@@ -1,0 +1,37 @@
+.whyDiscord-hero {
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xl) + 1rem;
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      @include responsive(xxl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive(lg) {
+        grid-template-columns: 1fr;
+      }
+
+      h3 {
+        @include headingStyles();
+        font-size: size(lg);
+        color: color(primary);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+        color: color(muted);
+      }
+    }
+  }
+}
