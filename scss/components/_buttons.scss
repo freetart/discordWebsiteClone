@@ -12,8 +12,21 @@
   border-radius: 2rem;
   transition: all 0.3s ease;
 
+  @include responsive(md) {
+    display: none;
+  }
+
   &:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.nav-btn-burger {
+  @extend .nav-btn;
+  text-align: center;
+
+  @include responsive(md) {
+    display: block;
   }
 }
 
