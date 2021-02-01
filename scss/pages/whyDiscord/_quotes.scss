@@ -1,0 +1,64 @@
+.quotes {
+  background-color: color(primary);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    &-title {
+      color: color(white);
+
+      h2 {
+        @include headingStyles();
+        font-size: size(xl) + 1rem;
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      @include responsive(xl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive(md) {
+        grid-template-columns: 1fr;
+      }
+
+      blockquote {
+        background-color: color(white);
+        padding: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        img {
+          width: 4rem;
+        }
+
+        p {
+          @include textStyles();
+          font-size: size(xs);
+        }
+
+        cite {
+          @include textStyles();
+          font-size: size(xs) - 0.1rem;
+          color: color(primary);
+        }
+      }
+    }
+  }
+}
