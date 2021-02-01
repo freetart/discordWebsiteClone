@@ -1,0 +1,47 @@
+.systems {
+  &-content {
+    @include maxWidthSm();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    @include responsive(md) {
+      gap: 1rem;
+    }
+
+    &-card {
+      background-color: color(gray);
+      padding: 5rem;
+      border-radius: 1rem;
+      text-align: center;
+
+      @include responsive(md) {
+        padding: 2rem;
+      }
+
+      h3 {
+        @include headingStyles();
+        font-size: size(xl) + 1rem;
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+
+      img {
+        width: 100%;
+
+        @include responsive(sm) {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

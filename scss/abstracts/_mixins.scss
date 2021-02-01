@@ -27,6 +27,11 @@
   margin: 0 auto;
 }
 
+@mixin maxWidthSm() {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 @mixin responsive($breakpoint) {
   @if ($breakpoint == xxl) {
     @media (max-width: 1300px) {
@@ -54,6 +59,12 @@
 
   @if ($breakpoint == sm) {
     @media (max-width: 400px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == xs) {
+    @media (max-width: 330px) {
       @content;
     }
   }
