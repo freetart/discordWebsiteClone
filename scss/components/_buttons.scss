@@ -21,6 +21,11 @@
   }
 }
 
+.nav-btn.bg-dark {
+  background-color: color(white);
+  color: color(black);
+}
+
 .nav-btn-burger {
   @extend .nav-btn;
   text-align: center;

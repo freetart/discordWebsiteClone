@@ -35,4 +35,18 @@
       }
     }
   }
+
+  &-logo.bg-dark {
+    color: color(white);
+
+    i {
+      color: color(white);
+    }
+  }
+
+  &-links.bg-dark {
+    a {
+      color: color(white);
+    }
+  }
 }
