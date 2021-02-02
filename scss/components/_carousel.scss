@@ -1,12 +1,23 @@
 .carousel {
   @include maxWidthSm();
   @include sectionSpacing();
+  position: relative;
 
   h2 {
     @include headingStyles();
     font-size: size(xl) + 2rem;
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  small {
+    @include textStyles();
+    font-size: size(xs);
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: color(primary);
+    transform: rotate(-45deg);
   }
 
   .glide__slide {
@@ -37,16 +48,16 @@
     }
   }
 
-  .glide__bullets {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  // .glide__bullets {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
 
-    .glide__bullet {
-      background-color: color(black);
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-    }
-  }
+  //   .glide__bullet {
+  //     background-color: color(black);
+  //     width: 3rem;
+  //     height: 3rem;
+  //     border-radius: 50%;
+  //   }
+  // }
 }
