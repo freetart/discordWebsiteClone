@@ -1,0 +1,110 @@
+.perks {
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    h2 {
+      @include headingStyles();
+      text-align: center;
+      font-size: size(xl) + 1rem;
+    }
+
+    p {
+      @include textStyles();
+      text-align: center;
+      font-size: size(md);
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      @include responsive(xl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive(md) {
+        grid-template-columns: 1fr;
+      }
+
+      .perks-content-card {
+        padding: 2rem;
+        text-align: center;
+        color: color(white);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 1rem;
+
+        h4 {
+          @include headingStyles();
+          font-size: size(md);
+        }
+
+        p {
+          @include textStyles();
+          font-size: size(xs);
+          padding: 1rem 0;
+        }
+
+        img {
+          width: 60%;
+        }
+
+        &:nth-child(1) {
+          background: linear-gradient(
+            to bottom right,
+            color(darkteal),
+            color(lightteal)
+          );
+        }
+
+        &:nth-child(2) {
+          background: linear-gradient(
+            to bottom right,
+            color(darkblue),
+            color(lightblue)
+          );
+
+          img {
+            width: 40%;
+          }
+        }
+
+        &:nth-child(3) {
+          background: linear-gradient(
+            to bottom right,
+            color(darkblue),
+            color(purple)
+          );
+        }
+
+        &:nth-child(4) {
+          background: linear-gradient(
+            to bottom right,
+            color(purple),
+            color(pink)
+          );
+        }
+
+        &:nth-child(5) {
+          background: linear-gradient(
+            to bottom right,
+            color(violet),
+            color(yellow)
+          );
+        }
+
+        &:nth-child(6) {
+          background: linear-gradient(
+            to bottom right,
+            color(orange),
+            color(yellow)
+          );
+        }
+      }
+    }
+  }
+}

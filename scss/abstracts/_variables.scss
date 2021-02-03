@@ -6,6 +6,13 @@ $colors: (
   muted: #393d40,
   purple: #b574f3,
   pink: #e192ac,
+  darkteal: #01a498,
+  lightteal: #26e7f3,
+  darkblue: #4475ff,
+  lightblue: #23ebff,
+  violet: #f83ce9,
+  yellow: #ffc851,
+  orange: #ef6817,
 );
 
 @function color($color-name) {
