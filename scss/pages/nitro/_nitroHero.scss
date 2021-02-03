@@ -1,0 +1,16 @@
+.nitro-header {
+  background: linear-gradient(color(purple), color(pink));
+
+  .nitro-hero {
+    h1 {
+      @include headingStyles();
+      color: color(white);
+      font-size: size(xl) + 1rem;
+      font-family: "Orbitron", cursive;
+    }
+
+    p {
+      color: color(white);
+    }
+  }
+}
