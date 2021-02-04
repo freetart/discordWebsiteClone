@@ -1,0 +1,73 @@
+.support {
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 1rem;
+      text-align: center;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xs);
+      text-align: center;
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+
+      @include responsive(xxl) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include responsive(xl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive(md) {
+        grid-template-columns: 1fr;
+      }
+
+      .support-content-card {
+        box-shadow: 0 0.5rem 1rem color(gray);
+        padding: 1.5rem;
+        text-align: center;
+        color: color(black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        i {
+          font-size: size(xl) + 4rem;
+          color: color(primary);
+        }
+
+        h4 {
+          @include headingStyles();
+          font-size: size(xs);
+          margin: 1rem 0;
+        }
+
+        small {
+          font-size: size(xs) - 0.2rem;
+        }
+
+        &:hover {
+          transform: translateY(-0.5rem);
+          background-color: color(primary);
+          color: color(white);
+
+          i {
+            color: color(white);
+          }
+        }
+      }
+    }
+  }
+}
