@@ -9,6 +9,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="images/favicons/koala.ico" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Discord Website Clone | Login</title>
@@ -19,7 +20,7 @@
         <i class="fab fa-discord mr-1"></i>
         <h3>Discord</h3>
       </a>
-      <div class="login-bg"></div>
+      <div class="login-bg" data-aos="fade-down"></div>
       <div class="form-container">
         <div class="form-left">
           <h1>Welcome Back!</h1>
@@ -44,5 +45,9 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200, duration: 1000, once: true });
+    </script>
   </body>
 </html>
