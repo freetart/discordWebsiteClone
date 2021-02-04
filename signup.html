@@ -11,36 +11,33 @@
     />
     <link rel="shortcut icon" href="images/favicons/koala.ico" />
     <link rel="stylesheet" href="css/main.min.css" />
-    <title>Discord Website Clone | Login</title>
+    <title>Discord Website Clone | Signup</title>
   </head>
   <body>
-    <div class="login-container">
-      <a href="index.html" class="login-logo">
+    <div class="signup-container">
+      <a href="index.html" class="signup-logo">
         <i class="fab fa-discord mr-1"></i>
         <h3>Discord</h3>
       </a>
-      <div class="login-bg"></div>
+      <div class="signup-bg"></div>
       <div class="form-container">
-        <div class="form-left">
-          <h1>Welcome Back!</h1>
-          <p class="mb-2">We're so excited to see you again!</p>
+        <div class="form-content">
+          <h1>Create an account</h1>
           <form class="form">
             <label for="email">Email</label>
-            <input type="email" class="mb-2" />
+            <input type="email" class="mb-2" id="email" />
+            <label for="username">Username</label>
+            <input type="text" class="mb-2" />
             <label for="password">Password</label>
             <input type="password" class="mb-2" />
-            <a href="#!" class="form-link mb-2">Forgot password?</a>
-            <a href="#!" class="btn-primary my-1">Login</a>
+            <label for="date">Date Of Birth</label>
+            <input type="date" class="mb-2" />
+            <a href="#!" class="btn-primary my-1">Sign Up</a>
             <small>
-              Need an account?
-              <a href="signup.html" class="form-link">Register</a>
+              Already have an account?
+              <a href="login.html" class="form-link">Login</a>
             </small>
           </form>
-        </div>
-        <div class="form-right">
-          <i class="fas fa-qrcode fa-fw"></i>
-          <h2 class="my-1">Login with QR Code</h2>
-          <p>scan this with the discord mobile app to login instantly</p>
         </div>
       </div>
     </div>
