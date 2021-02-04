@@ -1,0 +1,27 @@
+.guidelines {
+  background-color: color(gray);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 1rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xs);
+    }
+
+    h5 {
+      @include headingStyles();
+      font-size: size(sm);
+    }
+
+    a {
+      color: color(primary);
+    }
+  }
+}
