@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 30vh;
+    height: 40vh;
 
     h1 {
       @include headingStyles();
@@ -26,7 +26,7 @@
         border: 0;
 
         @include responsive(md) {
-          width: 40rem;
+          width: 35rem;
         }
 
         @include responsive(sm) {
@@ -42,7 +42,7 @@
         position: absolute;
         top: 1.3rem;
         left: 1rem;
-        z-index: 1000;
+        z-index: 10;
       }
 
       i {
